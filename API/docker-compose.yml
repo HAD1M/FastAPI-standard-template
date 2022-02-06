@@ -1,0 +1,15 @@
+version: "2"
+services:
+  pelatihan_docker_1:
+    image: "fastapi_standard:v1"
+    # restart: always
+    container_name: fastapi_standard_1
+    build: .
+    ports:
+      - "1245:1245"
+    volumes:
+      - /folder_path/mount:/mount
+    environment:
+      - PORT=1245
+      - app_key=12345XOXO
+  
