@@ -6,26 +6,11 @@
 	},
 	"item": [
 		{
-			"name": "API name",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://0.0.0.0:1245",
-					"protocol": "http",
-					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
-					],
-					"port": "1245"
-				}
-			},
-			"response": [
+			"name": "Sync API",
+			"item": [
 				{
 					"name": "API name",
-					"originalRequest": {
+					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -40,63 +25,53 @@
 							"port": "1245"
 						}
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "date",
-							"value": "Sun, 06 Feb 2022 08:57:11 GMT"
-						},
-						{
-							"key": "server",
-							"value": "uvicorn"
-						},
-						{
-							"key": "content-length",
-							"value": "72"
-						},
-						{
-							"key": "content-type",
-							"value": "application/json"
+							"name": "API name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:1245",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1245"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Sun, 06 Feb 2022 08:57:11 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "72"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Fastapi docker template\",\n    \"version\": \"February 2022\",\n    \"port\": 1245\n}"
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"name\": \"Fastapi docker template\",\n    \"version\": \"February 2022\",\n    \"port\": 1245\n}"
-				}
-			]
-		},
-		{
-			"name": "sample request 1",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "app-key",
-						"value": "12345XOXO",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://0.0.0.0:1245/sample_request_1",
-					"protocol": "http",
-					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
-					],
-					"port": "1245",
-					"path": [
-						"sample_request_1"
 					]
 				},
-				"description": "Testing mounted directory, and read data"
-			},
-			"response": [
 				{
 					"name": "sample request 1",
-					"originalRequest": {
+					"request": {
 						"method": "POST",
 						"header": [
 							{
@@ -118,74 +93,65 @@
 							"path": [
 								"sample_request_1"
 							]
-						}
+						},
+						"description": "Testing mounted directory, and read data"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "date",
-							"value": "Sun, 06 Feb 2022 08:58:30 GMT"
-						},
-						{
-							"key": "server",
-							"value": "uvicorn"
-						},
-						{
-							"key": "content-length",
-							"value": "82"
-						},
-						{
-							"key": "content-type",
-							"value": "application/json"
+							"name": "sample request 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "app-key",
+										"value": "12345XOXO",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://0.0.0.0:1245/sample_request_1",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1245",
+									"path": [
+										"sample_request_1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Sun, 06 Feb 2022 08:58:30 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "82"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": [\n        \"kuaci\",\n        \"sapi\",\n        \"api\",\n        \"smilikiti\",\n        \"halo semua\"\n    ],\n    \"file_list\": []\n}"
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": 1,\n    \"data\": [\n        \"kuaci\",\n        \"sapi\",\n        \"api\",\n        \"smilikiti\",\n        \"halo semua\"\n    ],\n    \"file_list\": []\n}"
-				}
-			]
-		},
-		{
-			"name": "sample request 2",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "app-key",
-						"value": "12345XOXO",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"string\": \"This is a test sentence\",\n    \"number\":1234.5678\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://0.0.0.0:1245/sample_request_2",
-					"protocol": "http",
-					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
-					],
-					"port": "1245",
-					"path": [
-						"sample_request_2"
 					]
 				},
-				"description": "test an operation on an input\nreturn input string length times the input number"
-			},
-			"response": [
 				{
 					"name": "sample request 2",
-					"originalRequest": {
+					"request": {
 						"method": "POST",
 						"header": [
 							{
@@ -216,65 +182,74 @@
 							"path": [
 								"sample_request_2"
 							]
-						}
+						},
+						"description": "test an operation on an input\nreturn input string length times the input number"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "date",
-							"value": "Sun, 06 Feb 2022 09:05:34 GMT"
-						},
-						{
-							"key": "server",
-							"value": "uvicorn"
-						},
-						{
-							"key": "content-length",
-							"value": "40"
-						},
-						{
-							"key": "content-type",
-							"value": "application/json"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": 1,\n    \"result\": 28395.059400000002\n}"
-				}
-			]
-		},
-		{
-			"name": "sample request 1 wrong app key",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://0.0.0.0:1245/sample_request_1?app-key=8765ewrt",
-					"protocol": "http",
-					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
-					],
-					"port": "1245",
-					"path": [
-						"sample_request_1"
-					],
-					"query": [
-						{
-							"key": "app-key",
-							"value": "8765ewrt"
+							"name": "sample request 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "app-key",
+										"value": "12345XOXO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"string\": \"This is a test sentence\",\n    \"number\":1234.5678\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:1245/sample_request_2",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1245",
+									"path": [
+										"sample_request_2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Sun, 06 Feb 2022 09:05:34 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "40"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"result\": 28395.059400000002\n}"
 						}
 					]
 				},
-				"description": "test API in case wrong app-key is inputted"
-			},
-			"response": [
 				{
 					"name": "sample request 1 wrong app key",
-					"originalRequest": {
+					"request": {
 						"method": "POST",
 						"header": [],
 						"url": {
@@ -296,31 +271,224 @@
 									"value": "8765ewrt"
 								}
 							]
+						},
+						"description": "test API in case wrong app-key is inputted"
+					},
+					"response": [
+						{
+							"name": "sample request 1 wrong app key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:1245/sample_request_1?app-key=8765ewrt",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1245",
+									"path": [
+										"sample_request_1"
+									],
+									"query": [
+										{
+											"key": "app-key",
+											"value": "8765ewrt"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Sun, 06 Feb 2022 09:07:25 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "12"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Async API",
+			"item": [
+				{
+					"name": "Async API name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:1246",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "1246"
 						}
 					},
-					"status": "Forbidden",
-					"code": 403,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "date",
-							"value": "Sun, 06 Feb 2022 09:07:25 GMT"
-						},
-						{
-							"key": "server",
-							"value": "uvicorn"
-						},
-						{
-							"key": "content-length",
-							"value": "12"
-						},
-						{
-							"key": "content-type",
-							"value": "application/json"
+							"name": "Async API name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:1246",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1246"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 15 Feb 2022 13:54:48 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "78"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Fastapi async docker template\",\n    \"version\": \"February 2022\",\n    \"port\": 1246\n}"
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": 0\n}"
+					]
+				},
+				{
+					"name": "Fetch all data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "app-key",
+								"value": "12345XOXO",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number_data\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:1246/fetch_all_data",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "1246",
+							"path": [
+								"fetch_all_data"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetch all data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "app-key",
+										"value": "12345XOXO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"number_data\":10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:1246/fetch_all_data",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "1246",
+									"path": [
+										"fetch_all_data"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 15 Feb 2022 13:58:17 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "146"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"result\": {\n        \"all_data\": [\n            {\n                \"data\": 0\n            },\n            {\n                \"data\": 1\n            },\n            {\n                \"data\": 2\n            },\n            {\n                \"data\": 3\n            },\n            {\n                \"data\": 4\n            },\n            {\n                \"data\": 5\n            },\n            {\n                \"data\": 6\n            },\n            {\n                \"data\": 7\n            },\n            {\n                \"data\": 8\n            },\n            {\n                \"data\": 9\n            }\n        ]\n    }\n}"
+						}
+					]
 				}
 			]
 		}

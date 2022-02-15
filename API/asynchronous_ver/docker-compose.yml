@@ -1,0 +1,13 @@
+version: "2"
+services:
+  fastapi_async_standard_1:
+    image: "fastapi_async_standard:v1"
+    # restart: always
+    container_name: fastapi_async_standard_1
+    build: .
+    ports:
+      - "1246:1246"
+    environment:
+      - PORT=1246
+      - app_key=12345XOXO
+  

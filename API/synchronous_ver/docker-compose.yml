@@ -1,6 +1,6 @@
 version: "2"
 services:
-  pelatihan_docker_1:
+  fastapi_standard_1:
     image: "fastapi_standard:v1"
     # restart: always
     container_name: fastapi_standard_1
